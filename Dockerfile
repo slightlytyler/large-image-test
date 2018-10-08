@@ -1,3 +1,3 @@
 FROM alpine
 
-RUN dd if=/dev/zero of=5g.img bs=1 count=0 seek=5G
+RUN dd if=/dev/urandom bs=1024 count=5000000 of=file_5GB conv=notrunc
